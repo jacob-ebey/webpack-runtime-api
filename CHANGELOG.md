@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/jacob-ebey/webpack-runtime-api/compare/v1.0.1...v1.0.2) (2024-03-02)
+
+
+### Bug Fixes
+
+* add logging ([#4](https://github.com/jacob-ebey/webpack-runtime-api/issues/4)) ([868a6ff](https://github.com/jacob-ebey/webpack-runtime-api/commit/868a6ff91ecd5b3649303ff5aed29da53ecbfeb9))
+
 ## [1.0.1](https://github.com/jacob-ebey/webpack-runtime-api/compare/v1.0.0...v1.0.1) (2024-03-02)
 
 
