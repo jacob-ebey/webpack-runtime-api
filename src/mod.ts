@@ -99,9 +99,17 @@ function createManager(compiler: Compiler): WebpackManager {
   let signal = abortController.signal;
 
   const watching = compiler.watch({}, (err, stats) => {
-    if (err || !stats)
+    if (err || !stats) {
       lastStatus = [undefined, err || new Error("No stats from build")];
-    else lastStatus = [stats];
+    } else {
+      lastStatus = [stats];
+      console.log(
+        stats.toString({
+          preset: "minimal",
+          colors: true,
+        })
+      );
+    }
 
     for (const deferred of waiting) {
       if (lastStatus.length === 2) deferred.reject(lastStatus[1]);
