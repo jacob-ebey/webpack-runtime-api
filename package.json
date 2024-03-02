@@ -1,0 +1,23 @@
+{
+  "name": "webpack-runtime-api",
+  "version": "0.0.0",
+  "description": "",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/src/mod.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "node --experimental-vm-modules -r ts-node/register --test ./test/*.test.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "esbuild-loader": "^4.0.3",
+    "ts-node": "^10.9.2",
+    "typescript": "5.3.3",
+    "webpack": "5.90.3"
+  }
+}
