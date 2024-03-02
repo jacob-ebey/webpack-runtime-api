@@ -5,7 +5,8 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/src/mod.js",
+  "types": "./dist/mod.d.ts",
+  "main": "./dist/mod.js",
   "scripts": {
     "build": "tsc",
     "test": "node --experimental-vm-modules -r ts-node/register --test ./test/*.test.ts"
